@@ -8,11 +8,11 @@
 
 [好客租房 - 移动 Web 端（React 项目）](https://www.bilibili.com/video/BV1SK4y1U7f1?p=270&spm_id_from=333.880.my_history.page.click)。
 
-本项目基于教程中的需求，使用最新的 `react 17`、`react-router v6`、`antd-mobile v5` 等框架和组件，采用 React Hook 进行重新编写，并对其中部分功能进行优化和 bug 的修正（因部分组件还未支持，故暂未支持 `react 18`）。
+本项目基于教程中的需求，使用最新的 `react 17`、`react-router v6`、`antd-mobile v5` 等框架和组件，采用 React Hook 进行重新编写，并对原教程中的代码进行优化和 bug 的修正（因部分组件还未支持，故暂未支持 `react 18`）。
 
 相关后端代码可在上面教程评论区寻找。
 
-部分样式代码参考了[@jerry306](https://gitee.com/jerry306)的代码。
+部分样式代码参考了[@jerry306](https://github.com/Jerry-306)的代码。
 
 ## 技术栈
 
