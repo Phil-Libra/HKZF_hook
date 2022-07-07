@@ -37,7 +37,10 @@ const Filter = ({
             setFilterData(result.data.body);
         };
 
-        getFilterData(cityValue);
+        // 防止第一次载入时还未获取城市就请求数据导致token失效
+        if (cityValue) {
+            getFilterData(cityValue);
+        }
     }, [cityValue]);
 
     // 设置标题选中状态和当前标题state
@@ -54,7 +57,7 @@ const Filter = ({
         area: ['area', 'null', null, null],
         mode: ['null'],
         price: ['null'],
-        more: [],
+        more: []
     };
     const [selectedValue, setSelectedValue] = useState(defaultSelected);
 

@@ -1,5 +1,5 @@
-import { Skeleton } from 'antd-mobile';
 import React, { Suspense, lazy } from 'react';
+import { Skeleton } from 'antd-mobile';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import AuthRoute from './components/AuthRoute';

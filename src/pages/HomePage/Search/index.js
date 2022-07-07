@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { List as AList, Toast } from 'antd-mobile';
 import { AutoSizer, InfiniteLoader, List as VList, WindowScroller } from 'react-virtualized';
 
-
 import { axiosAPI as axios, BASE_URL, useCity } from '../../../utils';
 
 import SearchBar from '../../../components/SearchBar';
@@ -46,7 +45,6 @@ const Search = () => {
                     end: 20
                 }
             });
-
             // 更新房源列表和房源数量
             setList(result.data.body.list);
 
