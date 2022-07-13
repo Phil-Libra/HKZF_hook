@@ -18,7 +18,7 @@ const Register = () => {
         username: Yup.string().required('账号为必填项').matches(REG_UNAME, '长度为5到8位，只能出现数字、字母和下划线'),
         password: Yup.string().required('密码为必填项').matches(REG_PWD, '长度为5到12位，只能出现数字、字母和下划线'),
         // 用Yup.ref获取第一次输入的密码来验证两次输入是否一致
-        password2: Yup.string().required('请再输一次密码').matches(Yup.ref('password'), '与上面的密码不一致')
+        password2: Yup.string().required('请再输一次密码').oneOf([Yup.ref('password')], '与上面的密码不一致')
     });
 
     const handleSubmit = async (e) => {
@@ -110,7 +110,7 @@ const Register = () => {
                 </Form>
             </Formik>
         </div>
-    )
+    );
 };
 
 export default Register;
